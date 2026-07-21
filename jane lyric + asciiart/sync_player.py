@@ -1,6 +1,4 @@
-"""
-Author link: https://github.com/stanislausd
-"""
+"""Author link: https://github.com/stanislausd"""
 
 import os
 import re
