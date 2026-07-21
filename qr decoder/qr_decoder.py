@@ -4,7 +4,7 @@ import base64
 from PIL import Image
 from pyzbar.pyzbar import decode as decode_qr
 
-NAMA_FILE_GAMBAR = "qrcode.png" #ubah disini cuy
+NAMA_FILE_GAMBAR = "qrcode.png" #ubah disini cuyy
 
 EMVCO_LABELS = {
     "00": "Payload Format Indicator",
