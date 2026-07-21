@@ -64,13 +64,24 @@ Hasilnya langsung muncul di terminal, sesuai format QR yang terbaca.
 
 Ini error yang lumayan sering dialami pengguna Windows. Pesannya biasanya `FileNotFoundError: Could not find module 'libzbar-64.dll' (or one of its dependencies)`.
 
-Penyebabnya bukan library-nya gagal diinstall, tapi DLL bawaan pyzbar butuh Visual C++ Redistributable yang belum ada di komputer kamu. Kode di `qr_decoder.py` udah aku tambahin penanganan khusus buat Windows, tapi kalau errornya masih muncul, install dulu:
+Penyebabnya bukan library-nya gagal diinstall, tapi DLL bawaan pyzbar butuh **Visual C++ Redistributable for Visual Studio 2013 (x64)** yang belum ada di komputer kamu. Ini beda dari Visual C++ Redistributable versi baru (2015-2022) yang mungkin udah kamu punya, dua-duanya perlu ada berdampingan.
 
-**Visual C++ Redistributable for Visual Studio 2013 (x64)**, bisa dicari di situs resmi Microsoft, lalu restart terminal atau komputernya.
-
-Kalau sudah diinstall dan masih error juga, coba install ulang pyzbar-nya:
+Cara paling cepat, buka PowerShell atau Command Prompt, ketik:
 
 ```
-pip uninstall pyzbar
-pip install pyzbar
+winget install Microsoft.VCRedist.2013.x64
 ```
+
+Kalau `winget` nggak dikenali, download manual di halaman resmi Microsoft:
+
+https://www.microsoft.com/en-us/download/details.aspx?id=40784
+
+Pilih file `vcredist_x64.exe`, install, terus **restart komputernya** (bukan cuma tutup terminal, soalnya runtime library ini butuh restart penuh biar kebaca sistem).
+
+Setelah restart, jalankan lagi:
+
+```
+python qr_decoder.py
+```
+
+Kalau masih muncul error yang sama persis, cek dulu di **Control Panel > Programs > Programs and Features**, cari "Microsoft Visual C++ 2013 Redistributable (x64)" di daftar, pastikan memang udah kepasang. Kalau nggak ada, instalasinya kemungkinan gagal diam-diam dan perlu diulang.
