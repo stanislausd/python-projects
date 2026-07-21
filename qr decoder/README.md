@@ -1,6 +1,6 @@
 # QR Code Decoder
 
-Konnichiwa, Bonjour, Hello.
+Nihaoo.
 
 Ini kode buatan Dio Rahmat.
 
