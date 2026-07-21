@@ -38,7 +38,7 @@ sudo apt install libzbar0
 ## Cara Jalanin
 
 1. Taruh file gambar QR code kamu di folder yang sama dengan `qr_decoder.py`.
-2. Buka `qr_decoder.py`, cari baris ke-7:
+2. Buka `qr_decoder.py`, cari baris ke-13:
 
    ```python
    NAMA_FILE_GAMBAR = "qrcode.png"
@@ -59,3 +59,18 @@ python qr_decoder.py nama_file_qr.png
 ```
 
 Hasilnya langsung muncul di terminal, sesuai format QR yang terbaca.
+
+## Kalau Muncul Error `libzbar-64.dll` di Windows
+
+Ini error yang lumayan sering dialami pengguna Windows. Pesannya biasanya `FileNotFoundError: Could not find module 'libzbar-64.dll' (or one of its dependencies)`.
+
+Penyebabnya bukan library-nya gagal diinstall, tapi DLL bawaan pyzbar butuh Visual C++ Redistributable yang belum ada di komputer kamu. Kode di `qr_decoder.py` udah aku tambahin penanganan khusus buat Windows, tapi kalau errornya masih muncul, install dulu:
+
+**Visual C++ Redistributable for Visual Studio 2013 (x64)**, bisa dicari di situs resmi Microsoft, lalu restart terminal atau komputernya.
+
+Kalau sudah diinstall dan masih error juga, coba install ulang pyzbar-nya:
+
+```
+pip uninstall pyzbar
+pip install pyzbar
+```
