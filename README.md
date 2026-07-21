@@ -1,4 +1,4 @@
-# python-projects
+# iPython
 Kumpulan berbagai skrip, eksperimen, dan mini-project berbasis Python yang saya kembangkan selama menempuh studi Sistem Informasi. Repository ini terus diperbarui seiring berjalannya proses belajar.
 
 ## 📂 Daftar Proyek (Direktori)
