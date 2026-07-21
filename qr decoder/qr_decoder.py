@@ -1,10 +1,16 @@
 import sys
 import re
 import base64
+import os
 from PIL import Image
+
+if sys.platform == "win32":
+    import pyzbar
+    os.add_dll_directory(os.path.dirname(pyzbar.__file__))
+
 from pyzbar.pyzbar import decode as decode_qr
 
-NAMA_FILE_GAMBAR = "qrcode.png" #ubah disini cuyy
+NAMA_FILE_GAMBAR = "qrcode.png"
 
 EMVCO_LABELS = {
     "00": "Payload Format Indicator",
@@ -158,4 +164,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-"""Author link: https://github.com/stanislausd"""
