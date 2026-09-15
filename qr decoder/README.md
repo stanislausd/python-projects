@@ -4,8 +4,6 @@ Nihaoo.
 
 Ini kode buatan Dio Rahmat.
 
-Setiap kode yang aku push ke GitHub bakal punya README kayak ini, biar jelas isinya apa, cara pakainya gimana, dan enam bulan lagi waktu aku buka ulang repo ini aku nggak bingung sendiri lihat kode buatan sendiri.
-
 ## Kode Ini Ngapain
 
 Script ini baca file gambar QR code, terus mecah isinya. Bukan cuma nampilin teks mentahnya, tapi dia coba kenali dulu itu QR isinya apa: link biasa, teks yang di-encode base64, kartu kontak (vCard), atau kode pembayaran QRIS/EMVCo. Formatnya dicetak duluan, baru isinya.
