@@ -1,3 +1,5 @@
+"""Author link: https://github.com/stanislausd"""
+
 import sys
 import re
 import base64
