@@ -1,9 +1,14 @@
 # iPython
 Kumpulan berbagai skript, eksperimen, dan tools sederhana berbasis Python yang saya buat sebagai bahan pembelajaran untuk saya dan uji commit & push git pertama di github.
-## 📂 Daftar Proyek
+## 📂 Daftar Projeck
 
-- **[Jane Lyrics & Ryu Ascii Art](./Jane%20lyrics%20&%20ryu%20ishigori%20asciiart/)** — Script lirik lagu *Jane (The Long Face)* dengan visual *ASCII Art* Ryu Ishigori (Jujutsu Kaisen) edisi meme *Let's Larp*.
-- **[QR Decoded](./QR%20Decoded/)** — *Tool* pembaca kode QR yang diklaim mampu memproses berbagai jenis QR dengan aman.
+*    **[Jane Lyrics & Ryu Ascii Art](./Jane%20lyrics%20&%20ryu%20ishigori%20asciiart/)** 
+    > Script lirik lagu *Jane* dari The Long Face, dilengkapi dengan tampilan ASCII Art Ryu Ishigori dari Anime Jujutsu Kaisen (referensi meme *"Let's LARP"* saat melawan Yuta).
+
+*    **[QR Decoded](./QR%20Decoded/)** 
+    > File program pemindai yang dirancang untuk membaca dan mengekstrak informasi dari kode QR apa pun dengan aman.
+
+
 
 ## 🛠️ Tech Stack & Tools
 *   Python 3.x
@@ -11,4 +16,4 @@ Kumpulan berbagai skript, eksperimen, dan tools sederhana berbasis Python yang s
 *   QuickEdit
 
 ---
-Dibuat dengan ☕ untuk keperluan pembelajaran dan portofolio.
+Dibuat dengan ☝️🗿 untuk keperluan pembelajaran dan portofolio.
