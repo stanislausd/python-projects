@@ -84,4 +84,4 @@ Setelah restart, jalankan lagi:
 python qr_decoder.py
 ```
 
-Kalau masih muncul error yang sama persis, cek dulu di **Control Panel > Programs > Programs and Features**, cari "Microsoft Visual C++ 2013 Redistributable (x64)" di daftar, pastikan memang udah kepasang. Kalau nggak ada, instalasinya kemungkinan gagal diam-diam dan perlu diulang.
+Kalau masih muncul error yang sama persis, cek dulu di **Control Panel > Programs > Programs and Features**, cari "Microsoft Visual C++ 2013 Redistributable (x64)" di daftar, pastikan memang udah terpasang. Kalau nggak ada, instalasinya kemungkinan gagal diamdiam dan perlu diulang.
